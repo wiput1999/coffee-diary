@@ -4,7 +4,10 @@ export default class MyDocument extends Document {
   render() {
     return (
       <Html lang="en">
-        <Head />
+        <Head>
+          <link href='/favicon.png' rel='shortcut icon' />
+          <link href='/favicon.png' rel='apple-touch-icon-precomposed' />
+        </Head>
         <body>
           <Main />
           <NextScript />
