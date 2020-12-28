@@ -1,22 +1,29 @@
+import React from 'react'
+import Link from 'next/link'
+
 import Avatar from './avatar'
 import DateFormatter from './date-formatter'
 import CoverImage from './cover-image'
-import Link from 'next/link'
 import { PostType } from '../types/post'
 
 const HeroPost = ({
   Title,
-  Attachments: coverImage,
+  Attachments: coverImage,
   CreatedAt: date,
-  slug,
-}: PostType) => {
+  slug
+}: PostType): React.ReactElement => {
   return (
     <section>
-      {coverImage &&
+      {coverImage && (
         <div className="mb-8">
-          <CoverImage title={Title} src={coverImage[0].url} slug={slug} hero={true} />
+          <CoverImage
+            title={Title}
+            src={coverImage[0].url}
+            slug={slug}
+            hero={true}
+          />
         </div>
-      }
+      )}
       <div className="md:grid md:grid-cols-2 md:col-gap-16 lg:col-gap-8 mb-8 md:mb-16">
         <div>
           <h3 className="mb-2 text-3xl leading-tight">

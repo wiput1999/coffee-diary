@@ -5,6 +5,8 @@
     "dev": "next",
     "build": "next build",
     "start": "next start",
+    "format": "yarn test:lint --fix",
+    "test:lint": "eslint '*/**/*.{js,ts,tsx}'",
     "typecheck": "tsc"
   },
   "dependencies": {
@@ -25,8 +27,14 @@
     "@types/node": "^14.0.1",
     "@types/react": "^17.0.0",
     "@types/react-dom": "^17.0.0",
+    "@typescript-eslint/eslint-plugin": "^4.11.1",
+    "@typescript-eslint/parser": "^4.11.1",
     "autoprefixer": "^10.1.0",
     "cssnano": "^4.1.10",
+    "eslint": "^7.16.0",
+    "eslint-config-prettier": "^7.1.0",
+    "eslint-plugin-prettier": "^3.3.0",
+    "eslint-plugin-react": "^7.21.5",
     "postcss": "^8.2.1",
     "postcss-preset-env": "^6.7.0",
     "tailwindcss": "^2.0.2"

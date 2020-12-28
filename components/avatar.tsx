@@ -1,9 +1,15 @@
-import { AUTHOR } from "../lib/constants"
+import React from 'react'
 
-const Avatar = () => {
+import { AUTHOR } from '../lib/constants'
+
+const Avatar = (): React.ReactElement => {
   return (
     <div className="flex items-center">
-      <img src={AUTHOR.picture} className="w-12 h-12 rounded-full mr-4" alt={AUTHOR.name} />
+      <img
+        src={AUTHOR.picture}
+        className="w-12 h-12 rounded-full mr-4"
+        alt={AUTHOR.name}
+      />
       <div className="text-xl font-bold">{AUTHOR.name}</div>
     </div>
   )

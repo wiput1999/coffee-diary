@@ -1,4 +1,4 @@
-import cn from 'classnames'
+import React from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 
@@ -9,14 +9,21 @@ type Props = {
   slug?: string
 }
 
-const CoverImage = ({ title, src, slug, hero = false }: Props) => {
+const CoverImage = ({
+  title,
+  src,
+  slug,
+  hero = false
+}: Props): React.ReactElement => {
   const image = (
     <Image
-      layout='fill'
+      layout="fill"
       src={src}
       alt={`Cover Image for ${title}`}
-      className={'shadow-small hover:shadow-medium transition-shadow duration-200'}
-      objectFit='cover'
+      className={
+        'shadow-small hover:shadow-medium transition-shadow duration-200'
+      }
+      objectFit="cover"
     />
   )
   return (

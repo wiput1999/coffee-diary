@@ -1,4 +1,5 @@
-import Footer from './footer'
+import React from 'react'
+
 import Meta from './meta'
 
 type Props = {
@@ -6,7 +7,7 @@ type Props = {
   children: React.ReactNode
 }
 
-const Layout = ({ preview, children }: Props) => {
+const Layout = ({ children }: Props): React.ReactElement => {
   return (
     <>
       <Meta />
