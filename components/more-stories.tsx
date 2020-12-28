@@ -16,7 +16,7 @@ const MoreStories = ({ posts }: Props) => {
           <PostPreview
             key={post.slug}
             title={post.Title}
-            coverImage={''}
+            coverImage={'https://dl.airtable.com/.attachmentThumbnails/7411e1b43bccb06d0e403950083667e8/406731bd'}
             date={post.CreatedAt}
             // author={post.author}
             slug={post.slug}

@@ -26,7 +26,7 @@ const Index = ({ allPosts }: Props) => {
           {heroPost && (
             <HeroPost
               title={heroPost.Title}
-              coverImage={''}
+              coverImage={'https://dl.airtable.com/.attachmentThumbnails/7411e1b43bccb06d0e403950083667e8/406731bd'}
               date={heroPost.CreatedAt}
               slug={heroPost.slug}
               excerpt={''}
