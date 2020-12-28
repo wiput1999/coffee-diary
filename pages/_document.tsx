@@ -5,10 +5,7 @@ export default class MyDocument extends Document {
   render(): React.ReactElement {
     return (
       <Html lang="en">
-        <Head>
-          <link href="/favicon.png" rel="shortcut icon" />
-          <link href="/favicon.png" rel="apple-touch-icon-precomposed" />
-        </Head>
+        <Head />
         <body>
           <Main />
           <NextScript />
