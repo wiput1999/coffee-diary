@@ -2,22 +2,20 @@ import Avatar from './avatar'
 import DateFormatter from './date-formatter'
 import CoverImage from './cover-image'
 import PostTitle from './post-title'
-import Author from '../types/author'
 import { Attachment } from '../types/post'
 
 type Props = {
   title: string
   coverImage: Attachment[]
   date: string
-  author?: Author
 }
 
-const PostHeader = ({ title, coverImage, date, author }: Props) => {
+const PostHeader = ({ title, coverImage, date }: Props) => {
   return (
     <>
       <PostTitle>{title}</PostTitle>
       <div className="hidden md:block md:mb-12">
-        {/* <Avatar name={author.name} picture={author.picture} /> */}
+        <Avatar />
       </div>
       {coverImage &&
         <div className="mb-8 md:mb-16 sm:mx-0">
@@ -26,7 +24,7 @@ const PostHeader = ({ title, coverImage, date, author }: Props) => {
       }
       <div className="max-w-2xl mx-auto">
         <div className="block md:hidden mb-6">
-          {/* <Avatar name={author.name} picture={author.picture} /> */}
+          <Avatar />
         </div>
         <div className="mb-6 text-lg">
           <DateFormatter dateString={date} />

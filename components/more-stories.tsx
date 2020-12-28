@@ -18,7 +18,6 @@ const MoreStories = ({ posts }: Props) => {
             title={post.Title}
             coverImage={post.Attachments}
             date={post.CreatedAt}
-            // author={post.author}
             slug={post.slug}
             excerpt={''}
           />

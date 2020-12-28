@@ -42,7 +42,6 @@ const Post = ({ post, morePosts, preview }: Props) => {
                 title={post.Title}
                 coverImage={post.Attachments}
                 date={post.CreatedAt}
-                // author={post.author}
               />
               <PostBody content={post.Content} />
             </article>
