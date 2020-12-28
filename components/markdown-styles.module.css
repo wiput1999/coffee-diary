@@ -9,6 +9,10 @@
   @apply my-6 break-all;
 }
 
+.markdown p {
+  text-indent: 4rem;
+}
+
 .markdown h1 {
   @apply text-4xl mt-8 mb-4 leading-snug;
 }
