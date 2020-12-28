@@ -6,7 +6,7 @@ import Layout from '../components/layout'
 import { getAllPosts } from '../lib/api'
 import Head from 'next/head'
 import { CMS_NAME } from '../lib/constants'
-import PostType from '../types/post'
+import {PostType} from '../types/post'
 
 type Props = {
   allPosts: PostType[]
@@ -26,7 +26,7 @@ const Index = ({ allPosts }: Props) => {
           {heroPost && (
             <HeroPost
               title={heroPost.Title}
-              coverImage={'https://dl.airtable.com/.attachmentThumbnails/7411e1b43bccb06d0e403950083667e8/406731bd'}
+              coverImage={heroPost.Attachments}
               date={heroPost.CreatedAt}
               slug={heroPost.slug}
               excerpt={''}

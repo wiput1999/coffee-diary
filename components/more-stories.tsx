@@ -1,8 +1,8 @@
 import PostPreview from './post-preview'
-import Post from '../types/post'
+import {PostType} from '../types/post'
 
 type Props = {
-  posts: Post[]
+  posts: PostType[]
 }
 
 const MoreStories = ({ posts }: Props) => {
@@ -16,7 +16,7 @@ const MoreStories = ({ posts }: Props) => {
           <PostPreview
             key={post.slug}
             title={post.Title}
-            coverImage={'https://dl.airtable.com/.attachmentThumbnails/7411e1b43bccb06d0e403950083667e8/406731bd'}
+            coverImage={post.Attachments}
             date={post.CreatedAt}
             // author={post.author}
             slug={post.slug}

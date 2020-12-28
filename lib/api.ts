@@ -1,6 +1,6 @@
 import Airtable from 'airtable'
 
-import PostType from '../types/post'
+import {PostType} from '../types/post'
 
 export async function getPostBySlug(slug: string): Promise<PostType> {
   const base = new Airtable().base('appnZu6BZs0yEC1v8');
