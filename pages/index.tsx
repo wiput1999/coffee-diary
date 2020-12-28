@@ -25,11 +25,7 @@ const Index = ({ allPosts }: Props) => {
           <Intro />
           {heroPost && (
             <HeroPost
-              title={heroPost.Title}
-              coverImage={heroPost.Attachments}
-              date={heroPost.CreatedAt}
-              slug={heroPost.slug}
-              excerpt={''}
+              {...heroPost}
             />
           )}
           {morePosts.length > 0 && <MoreStories posts={morePosts} />}

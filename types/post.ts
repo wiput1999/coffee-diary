@@ -28,6 +28,9 @@ export type PostType = {
   slug: string,
   Title: string,
   Content: string,
+  Store: string,
+  Branch: string,
+  Brew: string,
   CreatedAt: string
   Attachments: Attachment[]
 }
